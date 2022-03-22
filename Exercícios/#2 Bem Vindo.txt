@@ -1,0 +1,15 @@
+//Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
+
+algoritmo "Bem vindo"
+
+var
+
+nome: caractere
+
+inicio
+
+escreva("Qual é o seu nome? ")
+leia(nome)
+escreva("Bem vindo " , nome, ", é um prazer te conhecer!!")
+
+fimalgoritmo
