@@ -1,0 +1,11 @@
+//Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+
+algoritmo "Ola Mundo"
+
+var
+
+inicio
+
+escreva("Olá, mundo!")
+
+fimalgoritmo
