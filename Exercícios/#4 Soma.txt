@@ -1,0 +1,17 @@
+//Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+
+algoritmo "Soma"
+
+var
+
+n1 , n2 : real
+
+inicio
+
+escreva("Digite um número: ")
+leia(n1)
+escreva("Digite outro número: ")
+leia(n2)
+escreva("A soma entre os números é igual a ", n1 + n2)
+
+fimalgoritmo
