@@ -1,0 +1,15 @@
+//Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em algumas outras medidas.
+
+algoritmo "Distancia"
+
+var
+
+distancia : real
+
+inicio
+
+escreva("Digite um valor em metros: ")
+leia(distancia)
+escreva("O valor de ", distancia, "m corresponde a: ", distancia/1000, "Km, " , distancia*100, "Cm e ", distancia*1000, "MM")
+
+fimalgoritmo
