@@ -1,0 +1,15 @@
+//Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.
+
+algoritmo "Sucessor e antecessor"
+
+var
+
+n1 : inteiro
+
+inicio
+
+escreva("Digite um número: ")
+leia(n1)
+escreva("O antecessor dele é ", n1-1 , " e o sucessor dele é ", n1+1 , ".")
+
+fimalgoritmo
