@@ -1,0 +1,15 @@
+//Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
+
+algoritmo "Cambio"
+
+var
+
+din: real
+
+inicio
+
+escreva("Quantos reais você possui? ")
+leia(din)
+escreva("Essa quantia equivale a ", din/3.45:5:2, " dólares.")
+
+fimalgoritmo
