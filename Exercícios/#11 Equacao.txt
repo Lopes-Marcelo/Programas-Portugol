@@ -1,0 +1,22 @@
+//Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta.
+
+algoritmo "Equacao"
+
+var
+
+a , b , c , d : real
+
+inicio
+
+escreva("Digite um valor para A: ")
+leia(a)
+escreva("Digite outro valor para B: ")
+leia(b)
+escreva("Digite mais um valor para C: ")
+leia(c)
+
+d <- (b^2) - 4 * a * c
+
+escreva("O Delta dessa equação é: ", d)
+
+fimalgoritmo
