@@ -1,0 +1,31 @@
+//Crie um algoritmo que leia o nome e duas notas de um determinado aluno, calcule a sua
+média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
+não um bom aproveitamento (se ficou acima da média 7.0).
+
+algoritmo "Media Suficiente"
+
+var
+
+nome : caractere
+n1 , n2 , media : real
+
+inicio
+
+escreva("Informe seu nome: ")
+leia(nome)
+escreva("Digite sua nota 1: ")
+leia(n1)
+escreva("Digite sua nota 2: ")
+leia(n2)
+
+media <- (n1 + n2) / 2
+
+escreval("A sua média é: ", media)
+
+se (media > 7) entao
+   escreva( nome , ", seu aproveitamento foi considerado bom!")
+senao
+     escreva( nome , ", seu aproveitamento foi insuficiente.")
+fimse
+
+fimalgoritmo
