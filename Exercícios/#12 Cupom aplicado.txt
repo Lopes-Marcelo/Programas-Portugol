@@ -1,0 +1,15 @@
+//Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.
+
+algoritmo "Cupom Aplicado"
+
+var
+
+preco : real
+
+inicio
+
+escreva("Informe o valor do produto: R$")
+leia(preco)
+escreva("O valor do produto com o cupom aplicado é de: R$", preco*0.95)
+
+fimalgoritmo
