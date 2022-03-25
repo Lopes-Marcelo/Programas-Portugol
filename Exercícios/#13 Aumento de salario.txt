@@ -1,0 +1,15 @@
+//Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.
+
+algoritmo "Aumento de Salario"
+
+var
+
+salario : real
+
+inicio
+
+escreva("Informe seu salário atual: R$")
+leia(salario)
+escreva("Com o aumento, seu novo salário será de: R$", salario*1.15)
+
+fimalgoritmo
