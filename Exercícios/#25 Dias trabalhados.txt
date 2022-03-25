@@ -1,0 +1,17 @@
+//Crie um programa que leia o número de dias trabalhados em um mês e mostre o
+salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
+por hora trabalhada.
+
+algoritmo "Dias Trabalhados"
+
+var
+
+dias: inteiro
+
+inicio
+
+escreva("Quantos dias você trabalhou esse mês? ")
+leia(dias)
+escreva("Seu salário é de: R$", 200*dias)
+
+fimalgoritmo
