@@ -1,0 +1,31 @@
+//Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua
+situação em relação ao alistamento militar.
+
+algoritmo "Alistamento"
+
+var
+
+ano_nasc , ano_atual , s1 , s2 , idade : inteiro
+
+inicio
+
+escreva("Informe seu ano de nascimento: ")
+leia(ano_nasc)
+escreva("Informe o ano atual: ")
+leia(ano_atual)
+
+idade <- ano_atual - ano_nasc
+s1 <- 18 - idade
+s2 <- idade - 18
+
+se (idade < 18) entao
+   escreva("Faltam " , s1 , " anos para seu alistamento.")
+fimse
+     se (idade > 18 )  entao
+        escreva("Já se passaram " , s2 , " anos do seu alistamento.")
+     fimse
+          se (idade = 18) entao
+              escreva("Seu alistamento é esse ano!!")
+          fimse
+     
+fimalgoritmo
