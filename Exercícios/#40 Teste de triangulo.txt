@@ -1,0 +1,44 @@
+//Crie um programa que leia o tamanho de três segmentos de reta.
+Analise seus comprimentos e diga se é possível formar um triângulo com essas
+retas e mostrando que tipo de triângulo será formado a partir dos valores informados:
+- EQUILÁTERO: todos os lados iguais.
+- ISÓSCELES: dois lados iguais.
+- ESCALENO: todos os lados diferentes.
+
+algoritmo "Teste de Triangulos"
+
+var
+
+l1 , l2 , l3 : real
+triangulo , eq , iso , esca : logico
+
+inicio
+
+escreva("Digite um valor: ")
+leia(l1)
+escreva("Digite outro valor: ")
+leia(l2)
+escreva("Digite mais um valor: ")
+leia(l3)
+
+triangulo <- (l1 < l2 + l3) e (l2 < l1 + l3) e (l3 < l1 + l2)
+eq <- (l1 = l2) e (l1 = l3) e (l2 = l3)
+iso <- (l1 = l2) ou (l1 = l3) ou (l2 = l3)
+esca <- (l1 <> l2) e (l1 <> l3) e (l2 <> l3)
+
+se ( triangulo = verdadeiro) entao
+   escreval("É possível formar um triângulo com esses valores.")
+   se ( eq = verdadeiro) entao
+      escreval("E esse triângulo é equilátero.")
+   fimse
+        se ( iso = verdadeiro) entao
+           escreval("E esse triângulo é isósceles.")
+        fimse
+             se ( esca = verdadeiro) entao
+                escreval("E esse triângulo é escaleno.")
+             fimse
+senao
+   escreva("Não é possível formar um triângulo com esses valores")
+fimse
+
+fimalgoritmo
