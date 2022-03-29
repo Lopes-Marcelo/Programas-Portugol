@@ -1,0 +1,36 @@
+//Crie um jogo de JoKenPo (Pedra-Papel-Tesoura).
+
+algoritmo "JoKenPo"
+
+var
+
+mao1 , mao2 : inteiro
+
+inicio
+
+escreval("JoKenPo")
+escreval("")
+
+mao1 <- randi(3)
+mao2 <- randi(3)
+
+se (mao1 = 0) entao
+   escreval("Jogador 1: Pedra")
+fimse
+     se (mao1 = 1) entao
+        escreval("Jogador 1: Papel")
+     fimse
+          se (mao1 = 2) entao
+             escreval("Jogador 1: Tesoura")
+          fimse
+               se (mao2 = 0) entao
+                  escreval("Jogador 2: Pedra")
+               fimse
+                    se (mao2 = 1) entao
+                       escreval("Jogador 2: Papel")
+                    fimse
+                         se (mao2 = 2) entao
+                            escreval("Jogador 2: Tesoura")
+                         fimse
+
+fimalgoritmo
