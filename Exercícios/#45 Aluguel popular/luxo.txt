@@ -1,0 +1,49 @@
+//Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O
+aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para
+carro de luxo. Além disso, o cliente paga por Km percorrido. Faça um programa
+que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e
+quantos Km foram percorridos. No final mostre o preço a ser pago de acordo com a
+tabela a seguir:
+- Carros populares (aluguel de R$90 por dia).
+- Até 100Km percorridos: R$0,20 por Km.
+- Acima de 100Km percorridos: R$0,10 por Km.
+- Carros de luxo (aluguel de R$150 por dia).
+- Até 200Km percorridos: R$0,30 por Km.
+- Acima de 200Km percorridos: R$0,25 por Km.
+
+algoritmo "Aluguel Popular/Luxo"
+
+var
+
+tipo, dias, km, preco1 : real
+
+inicio
+
+escreva("Qual veículo gostaria de alugar? Popular [1] ou Luxo [2]? ")
+leia(tipo)
+escreva("Por quantos dias o carro será alugado? ")
+leia(dias)
+escreva("Quantos quilômetros serão percorridos? ")
+leia(km)
+
+escolha(tipo)
+             caso 1
+                  preco1 <- 90 * dias
+             caso 2
+                  preco1 <- 150 * dias
+fimescolha
+
+se (tipo = 1) e (km < 100) entao
+   escreva("O valor do aluguel será de R$" , (km * 0.2) + preco1)
+fimse
+     se (tipo = 1) e (km > 100) entao
+        escreva("O valor do aluguel será de R$" , (km * 0.1) + preco1)
+     fimse
+          se (tipo = 2 ) e (km < 200) entao
+             escreva("O valor do aluguel será de R$" , (km * 0.3) + preco1)
+          fimse
+               se (tipo = 2) e (km > 200) entao
+                  escreva("O valor do aluguel será de R$" , (km * 0.25) + preco1)
+               fimse
+               
+fimalgoritmo
