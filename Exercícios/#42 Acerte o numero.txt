@@ -1,0 +1,28 @@
+//Crie um jogo onde o computador vai sortear um número entre 1 e 5 o
+jogador vai tentar descobrir qual foi o valor sorteado.
+
+algoritmo "Acerte o Numero"
+
+var
+
+n1 , n2 : inteiro
+
+inicio
+
+escreval("Sorteei um número de 1 a 5, tente adivinhar!")
+escreval("")
+
+n1 <- randi(5) + 1
+
+escreva("Qual número você acha que foi sorteado?: ")
+leia(n2)
+
+escreval("")
+
+se (n1 = n2) entao
+   escreva("ACERTOU!!!")
+senao
+     escreva("Errou, tente outra vez!")
+fimse
+
+fimalgoritmo
