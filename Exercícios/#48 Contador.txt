@@ -1,0 +1,22 @@
+//Escreva um programa que mostre na tela a seguinte contagem:
+6 7 8 9 10 11 Acabou!
+
+algoritmo "Contador"
+
+var
+
+cont : inteiro
+
+inicio
+
+cont <- 6
+
+enquanto (cont <= 11) faca
+         escreval(cont)
+         cont <- cont + 1
+fimenquanto
+
+escreva(" ")
+escreva("Acabou!")
+
+fimalgoritmo
