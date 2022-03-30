@@ -1,0 +1,39 @@
+//Um programa de vida saudável quer dar pontos atividades físicas que podem
+ser trocados por dinheiro. O sistema funciona assim:
+- Cada hora de atividade física no mês vale pontos
+- até 10h de atividade no mês: ganha 2 pontos por hora
+- de 10h até 20h de atividade no mês: ganha 5 pontos por hora
+- acima de 20h de atividade no mês: ganha 10 pontos por hora
+- A cada ponto ganho, o cliente fatura R$0,05 (5 centavos)
+
+algoritmo "APP Fitness"
+
+var
+
+horas , d1, d2, d3 , ponto, p1, p2, p3 :  real
+
+inicio
+
+escreva("Quantas horas de exercício físico você faz por mês? ")
+leia(horas)
+
+p1 <- horas * 2
+p2 <- horas * 5
+p3 <- horas * 10
+
+d1 <- p1 * 0.05
+d2 <- p2 * 0.05
+d3 <- p3 * 0.05
+
+
+se (horas <= 10) entao
+   escreva("Você obteve " , p1 , " pontos e por isso recebeu R$" , d1 :5:2)
+fimse
+     se (horas > 10) e (horas <= 20) entao
+        escreva("Você obteve " , p2 , " pontos e por isso recebeu R$" , d2 :5:2)
+     fimse
+          se (horas > 20) entao
+             escreva("Você obteve " , p2 , " pontos e por isso recebeu R$" , d2 :5:2)
+          fimse
+
+fimalgoritmo
