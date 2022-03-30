@@ -1,0 +1,22 @@
+//Faça um algoritmo que mostre na tela a seguinte contagem:
+10 9 8 7 6 5 4 3 Acabou!
+
+algoritmo "Contador Reverso"
+
+var
+
+cont : inteiro
+
+inicio
+
+cont <- 10
+
+enquanto (cont >= 3) faca
+         escreval(cont)
+         cont <- cont - 1
+fimenquanto
+
+escreva(" ")
+escreva("Acabou!")
+
+fimalgoritmo
