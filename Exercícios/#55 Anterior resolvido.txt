@@ -1,0 +1,38 @@
+//O programa anterior vai ter um problema quando digitarmos o primeiro valor
+maior que o último. Resolva esse problema com um código que funcione em qualquer
+situação.
+
+algoritmo "Anterior Resolvido"
+
+var
+
+in, fim , salto , cont: inteiro
+
+inicio
+
+escreva("Digite o primeiro valor: ")
+leia(in)
+escreva("Digite o segundo valor: ")
+leia(fim)
+escreva("Digite o salto: ")
+leia(salto)
+
+se (in < fim) entao
+   cont <- in
+   enquanto (cont <= fim) faca
+            escreval("Contagem: " , cont )
+            cont <- cont + salto
+   fimenquanto
+   escreva("Acabou!")
+fimse
+
+se (in > fim) entao
+   cont <- in
+   enquanto (cont >= fim) faca
+            escreval("Contagem: ", cont )
+            cont <- cont - salto
+   fimenquanto
+   escreva("Acabou!")
+fimse
+
+fimalgoritmo
