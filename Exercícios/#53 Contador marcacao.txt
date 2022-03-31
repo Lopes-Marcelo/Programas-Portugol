@@ -1,0 +1,23 @@
+//Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1,
+marcando os números que forem divisíveis por 4.
+
+algoritmo "Contador Marcação"
+
+var
+
+cont: inteiro
+
+inicio
+
+cont <- 30 + 1
+
+enquanto (cont >= 1) faca
+         cont <- cont - 1
+         se (cont % 4 = 0) entao
+            escreval("[" ,cont, "]")
+         senao
+              escreval(cont)
+         fimse
+fimenquanto
+
+fimalgoritmo
