@@ -1,0 +1,37 @@
+//Crie um algoritmo que leia o valor inicial da contagem, o valor final e o
+incremento, mostrando em seguida todos os valores no intervalo.
+
+algoritmo "Contador Inicio/Fim"
+
+var
+
+in, fim , salto , cont: inteiro
+
+inicio
+
+escreva("Digite o primeiro valor: ")
+leia(in)
+escreva("Digite o segundo valor: ")
+leia(fim)
+escreva("Digite o salto: ")
+leia(salto)
+
+se (in < fim) entao
+   cont <- in
+   enquanto (cont <= fim) faca
+            escreval("Contagem: " , cont )
+            cont <- cont + salto
+   fimenquanto
+   escreva("Acabou!")
+fimse
+
+se (in > fim) entao
+   cont <- in
+   enquanto (cont >= fim) faca
+            escreval("Contagem: ", cont )
+            cont <- cont - salto
+   fimenquanto
+   escreva("Acabou!")
+fimse
+
+fimalgoritmo
