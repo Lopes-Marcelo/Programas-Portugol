@@ -1,0 +1,24 @@
+//Faça um algoritmo que pergunte ao usuário um número inteiro e positivo
+qualquer e mostre uma contagem até esse valor.
+
+algoritmo "Contador Usuario"
+
+var
+
+n, cont: inteiro
+
+inicio
+
+cont <- 0 + 1
+
+escreva("Digite um número inteiro e positivo qualquer: ")
+leia(n)
+
+enquanto (cont <= n) faca
+         escreval(cont)
+         cont <- cont + 1
+fimenquanto
+
+escreva("Acabou!")
+
+fimalgoritmo
