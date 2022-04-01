@@ -1,0 +1,22 @@
+//Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 +
+450 + 400 + 350 + 300 + ... + 50 + 0
+
+algoritmo "Soma"
+
+var
+
+cont, soma : inteiro
+
+inicio
+
+cont <- 0
+soma <- 0
+
+enquanto (cont < 500) faca
+         cont <- cont + 50
+         soma <- soma + cont
+fimenquanto
+
+escreva("O valor da soma é ", soma)
+
+fimalgoritmo
