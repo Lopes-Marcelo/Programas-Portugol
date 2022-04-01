@@ -1,0 +1,42 @@
+//Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e
+//mostre na tela:
+//a) Quais foram os números sorteados.
+//b) Quantos números estão acima de 5.
+//c) Quantos números são divisíveis por 3.
+
+algoritmo "Sorteio"
+
+var
+
+nn, cont, maior, menor, divi, ndivi: inteiro
+
+inicio
+
+escreval("Vamos sortear 20 números!")
+
+cont <- 0 + 1
+
+enquanto (cont <= 20) faca
+         nn <- randi(11)
+         escreval(nn)
+         cont <- cont + 1
+         
+         se (nn > 5) entao
+            maior <- maior + 1
+         senao
+            menor <- menor + 1
+         fimse
+         
+         se (nn % 3 = 0) entao
+            divi <- divi + 1
+         senao
+              ndivi <- ndivi + 1
+         fimse
+         
+fimenquanto
+
+escreval("Desses números " , maior , " são maiores do que cinco e " , menor , " são menores.")
+
+escreval("Desses números " , divi , " são divisíveis por três e " , ndivi , " não são.")
+
+fimalgoritmo
