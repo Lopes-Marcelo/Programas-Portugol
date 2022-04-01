@@ -1,0 +1,30 @@
+//Crie um programa que leia 6 números inteiros e no final mostre quantos deles
+são pares e quantos são ímpares.
+
+algoritmo "Pares ou Impares"
+
+var
+
+par, impar, n, cont: inteiro
+
+inicio
+
+cont <- 1
+
+enquanto (cont <= 6) faca
+   escreva("Digite o " , cont , "o. valor: ")
+   leia(n)
+
+   cont <- cont + 1
+   
+   se (n % 2 = 0) entao
+      par <- par + 1
+   senao
+        impar <- impar + 1
+   fimse
+   
+fimenquanto
+
+escreva(par , " número(s) é (são) par(es) e ", impar , " são ímpares.")
+
+fimalgoritmo
