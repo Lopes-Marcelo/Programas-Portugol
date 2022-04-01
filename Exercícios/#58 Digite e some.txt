@@ -1,0 +1,25 @@
+//Faça um programa que leia 7 números inteiros e no final mostre o somatório
+entre eles.
+
+algoritmo "Digite e Some"
+
+var
+
+soma, numero, cont: inteiro
+
+inicio
+
+cont <- 1
+soma <- 0
+
+enquanto (cont <= 7) faca
+   escreva("Digite o " , cont , "o. valor: ")
+   leia(numero)
+
+   soma <- soma + numero
+   cont <- cont + 1
+fimenquanto
+
+escreva("A soma desses números é de " , soma)
+
+fimalgoritmo
