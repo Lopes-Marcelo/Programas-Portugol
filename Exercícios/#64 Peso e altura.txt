@@ -1,0 +1,50 @@
+//Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando
+no final:
+a) Qual foi a média de altura do grupo.
+b) Quantas pessoas pesam mais de 90Kg.
+c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m.
+d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
+
+algoritmo "Peso e Altura"
+
+var
+
+cont, s1, peso, altura, p1, p2, p3: inteiro
+media: real
+
+inicio
+
+cont <- 1
+s1 <- 0
+
+enquanto (cont <= 7) faca
+         escreva("Digite o peso em Kg da " , cont , " o. pessoa: ")
+         leia(peso)
+         escreva("Digite a altura em Cm do " , cont , "o. pessoa: ")
+         leia(altura)
+         
+         s1 <- s1 + altura
+         media <- s1 / 7
+         
+         se (peso > 90) entao
+            p1 <- p1 + 1
+         fimse
+         
+         se (peso < 50) e (altura < 160) entao
+            p2 <- p2 + 1
+         fimse
+         
+         se (altura > 190) e (peso > 100) entao
+            p3 <- p3 + 1
+         fimse
+         
+         cont <- cont + 1
+         
+fimenquanto
+
+escreval("A média de altura do grupo é de " , media , "cm.")
+escreval(p1 , " pessoas pesam mais que 90Kg.")
+escreval(p2 , " pessoas pesam menos que 50Kg e medem menos que 1.60m.")
+escreval(p3 , " pessoas pesam mais que 100Kg e medem mais 1.90m.")
+         
+fimalgoritmo
