@@ -1,0 +1,36 @@
+//Vamos melhorar o jogo que fizemos no exercício 32. A partir de
+agora, o computador vai sortear um número entre 1 e 10 e o jogador vai ter 4
+tentativas para tentar acertar.
+
+algoritmo "Acertar Número"
+
+var
+
+n1 , n2, cont : inteiro
+
+inicio
+
+escreval("Sorteei um número, tente adivinhar!")
+escreval("")
+
+n1 <- randi(10) + 1
+cont <- 1
+
+enquanto (cont <= 5) faca
+
+   cont <- cont + 1
+   escreva("Qual número você acha que foi sorteado?: ")
+   leia(n2)
+
+   escreval("")
+
+   se (n1 = n2) entao
+      escreval("ACERTOU!!!")
+
+   senao
+      escreval("Errou, tente outra vez!")
+   fimse
+
+fimenquanto
+
+fimAlgoritmo
