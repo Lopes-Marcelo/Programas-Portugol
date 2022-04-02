@@ -1,0 +1,33 @@
+//Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela
+qual foi o maior e qual foi o menor preço digitados.
+
+algoritmo "Preços Lidos"
+
+var
+
+cont, n, maior, menor: inteiro
+
+inicio
+
+cont <- 1
+
+enquanto (cont <= 8) faca
+         escreva("Digite o " , cont , "o. preço: R$")
+         leia(n)
+         
+         se(n > maior) entao
+              maior <- n
+         fimse
+
+         se(n < menor) entao
+              menor <- n
+         fimse
+         
+         cont <- cont + 1
+         
+fimenquanto
+
+escreval("O maior preço é R$" , maior)
+escreval("O menor preço é R$" , menor)
+
+fimalgoritmo
