@@ -1,0 +1,46 @@
+//Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
+a) Qual é a média de idade do grupo.
+b) Quantas pessoas tem mais de 18 anos.
+c) Quantas pessoas tem menos de 5 anos.
+d) Qual foi a maior idade lida.
+
+algoritmo "Contador de Idade"
+
+var
+
+cont, s, n, maioridade, menor, maior: inteiro
+media: real
+
+inicio
+
+cont <- 1
+s <- 0
+
+enquanto (cont <= 10) faca
+   escreva("Digite a " , cont , "o. idade: ")
+   leia(n)
+
+   se (n > 18) entao
+      maioridade <- maioridade + 1
+   fimse
+
+   se (n < 5) entao
+      menor <- menor + 1
+   fimse
+
+   se (n > maior) entao
+      maior <- n
+   fimse
+
+   s <- s + n
+   media <- s/10
+   cont <- cont + 1
+   
+fimenquanto
+
+escreval("A média de idade é ", media , " anos.")
+escreval(maioridade , " pessoas possuem mais que 18 anos.")
+escreval(menor , " pessoas possuem menos que 5 anos.")
+escreval("A maior idade registrada foi de " , maior , " anos.")
+
+fimalgoritmo
