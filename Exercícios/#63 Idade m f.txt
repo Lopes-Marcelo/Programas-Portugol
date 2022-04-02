@@ -1,0 +1,59 @@
+//Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final:
+a) Quantos homens foram cadastrados.
+b) Quantas mulheres foram cadastradas.
+c) A média de idade do grupo.
+d) A média de idade dos homens.
+e) Quantas mulheres tem mais de 20 anos.
+
+algoritmo "Idade M/F"
+
+var
+
+cont, s, s1, idade, genero, masc, fem, fem1: inteiro
+media, media1: real
+
+inicio
+
+cont <- 1
+s <- 0
+s1 <- 0
+
+enquanto (cont <= 5) faca
+
+         cont <- cont + 1
+         
+         escreva("Qual sua idade? ")
+         leia(idade)
+         
+         escreva("Informe seu genêro, Masculino [1]/ Feminino [2]: ")
+         leia(genero)
+         
+         se (genero = 1) entao
+            masc <- masc + 1
+         fimse
+         
+         se (genero = 2) entao
+            fem <- fem + 1
+         fimse
+         
+         s <- s + idade
+         media <- s/5
+         
+         se (genero = 1) entao
+             s1 <- s1 + idade
+             media1 <- s1/masc
+         fimse
+         
+         se (genero = 2) e (idade > 20) entao
+            fem1 <- fem1 + 1
+         fimse
+         
+fimenquanto
+
+escreval("Foram cadastrados " , masc , " homens.")
+escreval("Foram cadastradas " , fem , " mulheres.")
+escreval("A média de idade desse grupo é de " , media , " anos.")
+escreval("A média de idade dos homens é de " , media1 , " anos.")
+escreval(fem1 , " mulheres têm mais de 20 anos.")
+         
+fimalgoritmo
