@@ -1,0 +1,40 @@
+//Faça um programa usando a estrutura “enquanto” que leia a idade de
+várias pessoas. A cada laço, você deverá perguntar para o usuário se ele quer ou
+não continuar a digitar dados. No final, quando o usuário decidir parar, mostre
+na tela:
+a) Quantas idades foram digitadas
+b) Qual é a média entre as idades digitadas
+c) Quantas pessoas tem 21 anos ou mais.
+
+algoritmo "Idade"
+
+var
+
+idade, nr_id, qnt, sm_id, maior: inteiro
+media: real
+resp: caractere
+
+inicio
+
+nr_id <- 0
+
+enquanto (resp = "N") faca
+         escreva("Informe a idade de um indivíduo: ")
+         leia(idade)
+         nr_id <- nr_id + 1
+         sm_id <- sm_id + idade
+         
+         se (idade <= 21) entao
+            maior <- maior + 1
+         fimse
+         
+         escreva("Gostaria de adcionar mais uma idade? [S/N]: ")
+         leia(resp)
+fimenquanto
+
+escreva("Foram registradas " , nr_id , " idades.")
+media <- sm_id/nr_id
+escreva("A médias das idades registradas é " , media)
+escreva(qnt , " pessoas possuem 21 anos ou mais.")
+
+fimalgoritmo
