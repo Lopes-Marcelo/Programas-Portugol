@@ -1,0 +1,63 @@
+//Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
+O programa vai perguntar se o usuário quer ou não continuar. No final, mostre:
+a) O nome da pessoa mais velha.
+b) O nome da mulher mais jovem.
+c) A média de idade do grupo.
+d) Quantos homens tem mais de 30 anos.
+e) Quantas mulheres tem menos de 18 anos.
+
+algoritmo "Nome, Idade e Sexo"
+
+var
+
+idade, maior, menor, cont, soma_id, qnt_masc, qnt_fem: inteiro
+nome, velho, nova, sexo, resp: caractere
+media_id: real
+
+inicio
+
+cont <- 0
+
+repita
+
+   escreva("Informe seu nome: ")
+   leia(nome)
+   escreva("Informe seu sexo [M/F]: ")
+   leia(sexo)
+   escreva("Digite sua idade: ")
+   leia(idade)
+
+   se (idade > maior) entao
+      maior <- idade
+      velho <- nome
+   fimse
+
+   se (sexo = "F") e (menor > idade) entao
+      menor <- idade
+      nova <- nome
+   fimse
+
+   cont <- cont + 1
+   soma_id <- soma_id + idade
+   
+   se (sexo = "M") e (idade >= 30) entao
+      qnt_masc <- qnt_masc + 1
+   fimse
+   
+   se (sexo = "F") e (idade <= 18) entao
+      qnt_fem <- qnt_fem + 1
+   fimse
+   
+   escreval("Quer adicionar mais uma pessoa? [S/N]: ")
+   leia(resp)
+   limpatela
+ate (resp = "N")
+
+escreval("A pessoa mais velha é " , velho , ". Com " , maior , " anos.")
+escreval("A mulher mais jovem é " , nova , ". Com " , menor , " anos.")
+media_id <- media_id/cont
+escreval("A média de idade do grupo é de " , media_id , " anos.")
+escreval( qnt_masc , " homens possuem mais de 30 anos.")
+escreval( qnt_fem , " mulheres possuem menos de 18 anos.")
+
+fimalgoritmo
