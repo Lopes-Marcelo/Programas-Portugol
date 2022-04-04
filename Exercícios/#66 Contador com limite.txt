@@ -1,0 +1,27 @@
+//Crie um programa que leia vários números pelo teclado e mostre no final o
+somatório entre eles.
+Obs: O programa será interrompido quando o número 1111 for digitado.
+
+algoritmo "Contador com Limite"
+
+var
+
+cont, n: inteiro
+
+inicio
+
+cont <- 0
+escreval("Contador. Para sair digite: 111.")
+
+repita
+
+   escreva("Digite um número: ")
+   leia(n)
+   cont <- cont + n
+
+ate (n = 111)
+
+escreval("O resultado do somatório é " , cont - 111 )
+escreval("Saindo...")
+
+fimalgoritmo
