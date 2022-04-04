@@ -1,0 +1,31 @@
+//Faça um algoritmo que leia a idade de vários alunos de uma turma. O programa
+vai parar quando for digitada a idade 999. No final, mostre quantos alunos
+existem na turma e qual é a média de idade do grupo.
+
+algoritmo "Idade dos Alunos"
+
+var
+
+idade, cont, soma_id: inteiro
+media: real
+
+inicio
+
+cont <- 0
+escreval("O programa começou! Para sair digite a idade 999!")
+
+repita
+
+   escreva("Informe sua idade: ")
+   leia(idade)
+
+   cont <- cont + 1
+   soma_id <- soma_id + idade
+   limpatela
+
+ate (idade = 999)
+
+media <- (soma_id - 999)/(cont -1)
+escreva("Nessa turma existem " , cont - 1 , " alunos e sua média de idade é " , media , " anos.")
+
+fimalgoritmo
