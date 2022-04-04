@@ -1,0 +1,47 @@
+//Crie um programa usando a estrutura “enquanto” que leia vários números.
+A cada laço, pergunte se o usuário quer continuar ou não. No final, mostre na
+tela:
+a) O somatório entre todos os valores
+b) Qual foi o menor valor digitado
+c) A média entre todos os valores
+d) Quantos valores são pares
+
+algoritmo "Vários Números"
+
+var
+
+soma, numero, menor, pares, cont: inteiro
+media: real
+resp: caractere
+
+inicio
+
+soma <- 0
+cont <- 0
+
+enquanto (resp = "N") faca
+         escreva("Informe um número: ")
+         leia(numero)
+
+         soma <- soma + idade
+         se (numero < menor) entao
+            menor <- numero
+         fimse
+         
+         cont <- cont + 1
+         
+         se (numero % 2 = 0) entao
+            pares <- pares + 1
+         fimse
+         
+         escreva("Gostaria de adcionar mais uma idade? [S/N]: ")
+         leia(resp)
+fimenquanto
+
+escreval("A soma de todos os valores digitados foi " , soma)
+escreval("O menor valor digitado foi " , menor)
+media <- soma/cont
+escreval("A média de todos os valores digitados é " , media)
+escreval(pares , " valores são pares.")
+
+fimalgoritmo
