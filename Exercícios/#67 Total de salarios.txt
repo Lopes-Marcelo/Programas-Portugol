@@ -1,0 +1,35 @@
+//Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
+No final, mostre o total de salários pagos aos homens e o total pago às
+mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
+sempre que ler os dados de um funcionário.
+
+algoritmo "Total de Salarios"
+
+var
+
+resp, sexo : caractere
+salario, sal_masc , sal_fem: real
+
+inicio
+
+repita
+
+   escreva("Qual o seu sexo? (Masc[M]/Fem[F]): ")
+   leia(sexo)
+   escreva("Qual é o seu salário? ")
+   leia(salario)
+
+   se (sexo = "M") entao
+      sal_masc <- sal_masc + salario
+   senao
+      sal_fem <- sal_fem + salario
+   fimse
+   
+   escreva("Quer continuar? [S/N]: ")
+   leia(resp)
+   limpatela
+ate (resp = "N")
+
+escreva("Aos homens foram pagos R$" , sal_masc , " e às mulheres um total de R$" , sal_fem , ".")
+
+fimalgoritmo
