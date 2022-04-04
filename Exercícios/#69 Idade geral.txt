@@ -1,0 +1,54 @@
+//Crie um programa que leia o sexo e a idade de várias pessoas. O programa vai
+perguntar se o usuário quer continuar ou não a cada pessoa. No final, mostre:
+a) qual é a maior idade lida.
+b) quantos homens foram cadastrados.
+c) qual é a idade da mulher mais jovem.
+d) qual é a média de idade entre os homens.
+
+algoritmo "Idade Geral"
+
+var
+
+cont_masc, idade, maior, menor, soma_masc: inteiro
+sexo, resp: caractere
+media_masc: real
+
+inicio
+
+cont_masc <- 0
+
+repita
+
+   escreva("Informe seu sexo [M/F]: ")
+   leia(sexo)
+   escreva("Digite sua idade: ")
+   leia(idade)
+
+   se (idade > maior) entao
+      maior <- idade
+   fimse
+
+   se (sexo = "M") entao
+      cont_masc <- cont_masc + 1
+   fimse
+
+   se (sexo = "F") e (menor > idade) entao
+      menor <- idade
+   fimse
+
+   se (sexo = "M") entao
+      soma_masc <- soma_masc + idade
+      media_masc <- (soma_masc)/cont_masc
+   fimse
+
+   escreval("Quer adicionar mais uma pessoa? [S/N]: ")
+   leia(resp)
+   limpatela
+ate (resp = "N")
+
+escreval("A maior idade lida é " , maior)
+escreval("Foram cadastrados " , cont_masc , " homens.")
+escreval("A mulher mais jovem possui " , menor , " anos.")
+escreval("A média de idade entre os homens é de " , media_masc , " anos.")
+
+fimalgoritmo
