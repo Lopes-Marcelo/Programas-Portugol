@@ -1,0 +1,26 @@
+//Desenvolva um programa que leia o primeiro termo e a razão de uma
+//PA (Progressão Aritmética), mostrando na tela os 10 primeiros elementos da PA e
+//a soma entre todos os valores da sequência.
+
+algoritmo "Progressão Aritmética"
+
+var
+
+soma, in, razao, fim, cont: inteiro
+
+inicio
+
+escreva("Informe o primeiro elemento da PA: ")
+leia(in)
+escreva("Informe a razão da PA: ")
+leia(razao)
+fim <- razao * 10
+
+para cont <- in ate fim passo razao faca
+     escreval(cont)
+     soma <- soma + cont
+fimpara
+
+escreva("A soma de todos os termos dessa PA é " , soma)
+
+fimalgoritmo
