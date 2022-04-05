@@ -1,0 +1,47 @@
+//Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura
+“para”. No final, mostre na tela:
+a) Quantas mulheres foram cadastradas
+b) Quantos homens pesam mais de 100Kg
+c) A média de peso entre as mulheres
+d) O maior peso entre os homens
+
+algoritmo "Sexo e peso"
+
+var
+
+sexo: caractere
+peso, mul, hom, maior, sm_peso, media: inteiro
+
+inicio
+
+para cont <- 1 ate 8 passo 1 faca
+       escreva("Informe o sexo [M/F]: ")
+       leia(sexo)
+       escreva("Digite o peso (em Kg): ")
+       leia(peso)
+       
+       se (sexo = "F") entao
+          mul <- mul + 1
+       fimse
+       
+       se (sexo = "M") e (peso >= 100) entao
+          hom <- hom + 1
+       fimse
+       
+       se (sexo = "F") entao
+          sm_peso <- sm_peso + peso
+       fimse
+       
+       se (sexo = "M") e (peso > maior) entao
+          maior <- peso
+       fimse
+
+fimpara
+
+media <- sm_peso/mul
+escreval("Foram cadastradas " , mul , " mulheres.")
+escreval(hom , " pesam 100Kg ou mais.")
+escreval("A média de peso entre mulheres cadastradas é de " , media , "Kg.")
+escreval("O maior peso entre os homens é de " , maior , "Kg.")
+
+fimalgoritmo
