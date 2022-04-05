@@ -1,0 +1,19 @@
+//Escreva um programa que leia um número qualquer e mostre a tabuada desse
+//número, usando a estrutura “para”.
+
+algoritmo "Tabuada"
+
+var
+
+cont, num: inteiro
+
+inicio
+
+escreva("Digite um número: ")
+leia(num)
+
+para cont <- 1 ate 10 faca
+   escreval(num , " x " , cont , " = " , num * cont)
+fimpara
+
+fimalgoritmo
