@@ -1,0 +1,19 @@
+//Faça um programa usando a estrutura “para” que leia um número inteiro
+//positivo e mostre na tela uma contagem de 0 até o valor digitado.
+
+algoritmo "Contagem"
+
+var
+
+num, cont: inteiro
+
+inicio
+
+escreva("Informe um número: ")
+leia(num)
+
+para cont <- 0 ate num passo 1 faca
+     escreval(cont)
+fimpara
+
+fimalgoritmo
