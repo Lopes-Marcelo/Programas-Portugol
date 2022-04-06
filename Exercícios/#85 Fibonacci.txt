@@ -1,0 +1,37 @@
+//Faça um programa que mostre os 10 primeiros elementos da Sequência
+de Fibonacci.
+
+algoritmo "Fibonacci"
+
+var
+
+v1, v2, v3, c: inteiro
+n: vetor[1..15] de Inteiro
+ 
+procedimento proximof (var a, b: inteiro)
+
+var
+
+c: inteiro
+
+inicio
+
+c <- a + b
+escreva(c)
+a <- b
+b <- c
+
+fimprocedimento
+
+inicio
+
+v1 <- 0
+escreva(v1)
+v2 <- 1
+escreva(v2)
+
+para c <- 3 ate 15 faca
+   proximof(v1, v2)
+fimpara
+
+fimalgoritmo
