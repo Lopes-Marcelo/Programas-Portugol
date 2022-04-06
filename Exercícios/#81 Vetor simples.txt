@@ -1,0 +1,22 @@
+//Faça um programa que preencha automaticamente um vetor numérico com 8
+//posições.
+
+algoritmo "Vetor Simples"
+
+var
+
+vet: vetor[1..8] de inteiro
+i: inteiro
+
+inicio
+
+para i <- 1 ate 8 faca
+     escreva("Digite o " , i , "o. valor: ")
+     leia(vet[i])
+fimpara
+
+para i <- 1 ate 8 faca
+     escreva(vet[i])
+fimpara
+
+fimalgoritmo
