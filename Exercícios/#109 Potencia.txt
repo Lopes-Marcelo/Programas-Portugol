@@ -1,0 +1,33 @@
+//Faça um programa que possua uma função chamada Potencia(), que vai receber
+//dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
+//exponenciação.
+
+algoritmo "Potencia"
+
+var
+
+res, x , y: real
+
+funcao potencia(a, b: real) : real
+
+var
+
+pot: real
+
+inicio
+
+pot <- a ^ b
+retorne pot
+
+fimfuncao
+
+inicio
+
+escreva("Informe o valor da base: ")
+leia(x)
+escreva("Informe o valor do expoente: ")
+leia(y)
+res <- potencia(x, y)
+escreval("A exponenciação dos valores informados é: " , res)
+
+fimalgoritmo
