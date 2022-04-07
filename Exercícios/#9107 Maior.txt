@@ -1,0 +1,48 @@
+//Refaça o exercício 91, só que agora em forma de função Maior(), mas faça uma
+//adaptação que vai receber TRÊS números como parâmetro e vai retornar qual foi o
+//maior entre eles.
+
+algoritmo "Maior"
+
+var
+
+x, y, z, res: inteiro
+
+funcao maior(a, b, c: inteiro) : inteiro
+var
+
+mai: inteiro
+
+inicio
+
+escreval("Recebi o valor " , a)
+escreval("Recebi o valor " , b)
+escreval("Recebi o valor " , c)
+
+se (a > b) e (a > c) entao
+   mai <- a
+fimse
+
+se (b > a) e (b > c) entao
+   mai <- b
+fimse
+
+se (c > a) e (c > b) entao
+   mai <- c
+fimse
+
+retorne mai
+fimfuncao
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+escreva("Digite outro valor: ")
+leia(y)
+escreva("Digite mais um valor: ")
+leia(z)
+res <- maior(x, y, z)
+escreva("O maior número informado é " , res)
+   
+fimalgoritmo
