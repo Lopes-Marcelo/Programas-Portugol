@@ -1,0 +1,66 @@
+//Melhore o exercício 96, criando além da função Media() uma outra função
+//chamada Situacao(), que vai retornar para o programa principal se o aluno está
+//APROVADO, em RECUPERAÇÃO ou REPROVADO. Essa nova função, vai receber como
+//parâmetro o resultado retornado pela função Media().
+
+algoritmo "Situação"
+
+var
+
+x, y, resp1: real
+r, resp2: caractere
+
+funcao media(a, b: real) : real
+
+var
+
+med: real
+
+inicio
+
+med <- (a + b)/2
+retorne med
+
+fimfuncao
+
+funcao situacao(re: caractere) : caractere
+
+var
+
+med1: real
+sit: caractere
+
+inicio
+
+med1 <- media(x,y)
+
+se (med1 < 6) entao
+   sit <- "Reprovado"
+fimse
+
+se (med1 >= 6) e (med1 < 7) entao
+   sit <- "Recuperação"
+fimse
+
+se (med1 > 7) entao
+   sit <- "Aprovado"
+fimse
+
+retorne sit
+
+fimfuncao
+
+inicio
+
+escreva("Informe sua nota 1: ")
+leia(x)
+escreva("Informe sua nota 2: ")
+leia(y)
+
+resp1 <- media(x,y)
+resp2 <- situacao(r)
+
+escreval("A média do aluno diante das notas informadas é de: " , resp1)
+escreval("A situação do aluno é: " , resp2)
+
+fimalgoritmo
