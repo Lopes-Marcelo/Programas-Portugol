@@ -1,0 +1,32 @@
+//Crie um programa que tenha uma função Media(), que vai receber as 2 notas de
+um aluno e retornar a sua média para o programa principal.
+
+algoritmo "Media"
+
+var
+
+res, x , y: real
+
+funcao media(a, b: real) : real
+
+var
+
+med: real
+
+inicio
+
+med <- (a + b)/2
+retorne med
+
+fimfuncao
+
+inicio
+
+escreva("Informe sua nota 1: ")
+leia(x)
+escreva("Informe sua nota 2: ")
+leia(y)
+res <- media(x, y)
+escreval("A média das notas informadas é: " , res)
+
+fimalgoritmo
