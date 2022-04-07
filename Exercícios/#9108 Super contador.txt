@@ -1,0 +1,49 @@
+//Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+//números como parâmetro e depois vai retornar a soma de todos os valores no
+//intervalo entre os valores recebidos.
+
+algoritmo "Super Contador"
+
+var
+
+x, y, res: inteiro
+
+funcao contador(a, b: inteiro) : inteiro
+var
+
+cont, soma: inteiro
+
+inicio
+
+escreval("Recebi o valor " , a)
+escreval("Recebi o valor " , b)
+
+
+se (a < b) entao
+   para cont <- a ate b passo 1 faca
+      escreval(cont)
+      soma <- soma + cont
+   fimpara
+fimse
+
+se (a > b) entao
+   para cont <- a ate b passo -1 faca
+      escreval(cont)
+      soma <- soma + cont
+   fimpara
+fimse
+
+retorne soma
+fimfuncao
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+escreva("Digite outro valor: ")
+leia(y)
+
+res <- contador(x, y)
+escreva("A soma dos números dentro do intervalo entre os valores informados é igual a: " , res)
+
+fimalgoritmo
