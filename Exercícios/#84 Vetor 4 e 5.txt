@@ -1,0 +1,22 @@
+//Crie um programa que preencha automaticamente (usando lógica, não apenas
+//atribuindo diretamente) um vetor numérico com 10 posições.
+
+algoritmo "Vetor 4 e 5"
+
+var
+
+vet: vetor[1..10] de inteiro
+i, j, aux: inteiro
+
+inicio
+
+para i <- 1 ate 10 faca
+     aleatorio 4 , 5
+     leia(vet[i])
+fimpara
+
+para i <- 1 ate 10 faca
+     escreva("{" , vet[i] , "}")
+fimpara
+
+fimalgoritmo
