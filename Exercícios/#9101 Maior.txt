@@ -1,0 +1,42 @@
+//Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+//valores para um procedimento Maior() que vai verificar qual deles é o maior e
+//mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
+//informando essa característica.
+
+algoritmo "Maior"
+
+var
+
+x , y: inteiro
+
+procedimento maior(a, b: inteiro)
+
+inicio
+
+escreval("Recebi o valor " , a)
+escreval("Recebi o valor " , b)
+escreval(" ")
+
+se (a > b) entao
+   escreval("O número " , a , " é maior que o número " , b , ".")
+fimse
+
+se (a < b) entao
+   escreval("O número " , b , " é maior que o número " , a , ".")
+fimse
+
+se (a = b) entao
+   escreval("Os números são iguais.")
+fimse
+
+fimprocedimento
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+escreva("Digite outro valor: ")
+leia(y)
+maior( x, y)
+
+fimalgoritmo
