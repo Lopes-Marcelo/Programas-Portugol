@@ -1,0 +1,33 @@
+//Refaça o exercício 90, só que agora em forma de função Somador(), que vai
+//receber dois parâmetros e vai retornar o resultado da soma entre eles para o
+//programa principal.
+
+algoritmo "Somador"
+
+var
+
+x , y, res: inteiro
+
+funcao somador(a, b: inteiro) : inteiro
+
+var
+
+s: inteiro
+
+inicio
+
+s <- a + b
+retorne s
+
+fimfuncao
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+escreva("Digite outro valor: ")
+leia(y)
+res <- somador(x, y)
+escreval("A soma é " , res)
+
+fimalgoritmo
