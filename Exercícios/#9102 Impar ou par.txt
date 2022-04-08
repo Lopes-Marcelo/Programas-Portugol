@@ -1,0 +1,31 @@
+//Crie uma lógica que leia um número inteiro e passe para um procedimento
+ParOuImpar() que vai verificar e mostrar na tela se o valor passado como
+parâmetro é PAR ou ÍMPAR.
+
+algoritmo "Par ou Ímpar"
+
+var
+
+x: inteiro
+
+procedimento maior(a: inteiro)
+
+inicio
+
+escreval("Recebi o valor " , a)
+
+se (a % 2 = 0) entao
+   escreval("O número é PAR!")
+senao
+   escreval("O número é ÍMPAR!")
+fimse
+
+fimprocedimento
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+maior(x)
+
+fimalgoritmo
