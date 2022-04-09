@@ -1,0 +1,36 @@
+//Crie um programa que melhore o procedimento Gerador() da questão anterior
+//para que mostre uma mensagem.
+
+algoritmo "Gerador 2"
+
+var
+
+n: inteiro
+resp: caractere
+
+procedimento gerador(msg: caracter)
+
+var
+
+c: inteiro
+
+inicio
+
+escreval("+----===----+")
+para c <- 1 ate n faca
+     escreval(resp)
+fimpara
+escreval("+----===----+")
+
+fimprocedimento
+
+inicio
+
+escreval("O programa vai começar...")
+escreva("Quantas vezes quer repetir? ")
+leia(n)
+escreva("Oque gostaria de escrever? ")
+leia(resp)
+gerador("mensgenzinha")
+
+fimalgoritmo
