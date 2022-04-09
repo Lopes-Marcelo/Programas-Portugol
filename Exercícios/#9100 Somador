@@ -1,0 +1,29 @@
+//Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+valores para um procedimento Somador() que vai calcular e mostrar a soma entre
+eles.
+
+algoritmo "Somador"
+
+var
+
+x , y: inteiro
+
+procedimento somador(a, b: inteiro)
+
+inicio
+
+escreval("Recebi o valor " , a)
+escreval("Recebi o valor " , b)
+escreval("A soma entre os dois é " , a + b)
+
+fimprocedimento
+
+inicio
+
+escreva("Digite um valor: ")
+leia(x)
+escreva("Digite outro valor: ")
+leia(y)
+somador( x, y)
+
+fimalgoritmo
