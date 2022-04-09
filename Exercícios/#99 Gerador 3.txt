@@ -1,0 +1,43 @@
+//Crie um programa que melhore o procedimento Gerador() da questão anterior.
+
+algoritmo "Gerador 3"
+
+var
+
+n, cont: inteiro
+resp, borda, a, b, c: caractere
+
+procedimento gerador("msg" : caractere)
+
+inicio
+
+escreval("  Olá, Mundo!  ")
+
+fimprocedimento
+
+inicio
+
+escreva("Qual borda quer utilizar, [a]/[b]/[c]? ")
+leia(resp)
+se (resp = "a") entao
+   borda <- ("+----===----+")
+fimse
+
+se (resp = "b") entao
+    borda <- ("~~~~:::::~~~~")
+fimse
+
+se (resp = "c") entao
+   borda <- ("<<<<<--->>>>>")
+fimse
+
+escreva("Quantas vezes quer repetir? ")
+leia(n)
+
+escreval(borda)
+para cont <- 1 ate n faca
+     gerador("mensagem")
+fimpara
+escreval(borda)
+
+fimalgoritmo
