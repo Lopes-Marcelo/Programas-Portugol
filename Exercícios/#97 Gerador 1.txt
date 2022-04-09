@@ -1,0 +1,27 @@
+//Crie um programa que melhore o procedimento Gerador() da questão anterior
+//para que mostre uma mensagem personalizada, passada como parâmetro.
+
+algoritmo "Gerador 1"
+
+var
+
+resp: caractere
+
+procedimento gerador(msg: caracter)
+
+inicio
+
+escreval("+----===----+")
+escreval(resp)
+escreval("+----===----+")
+
+fimprocedimento
+
+inicio
+
+escreval("O programa vai começar...")
+escreva("O que gostaria de escrever na mensagem? ")
+leia(resp)
+gerador("mensgenzinha")
+
+fimalgoritmo
