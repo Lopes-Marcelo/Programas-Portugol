@@ -1,0 +1,31 @@
+//Faça um algoritmo que preencha um vetor de 30 posições com números entre 1 e
+//15 sorteados pelo computador. Depois disso, peça para o usuário digitar um
+//número (chave) e seu programa deve mostrar em que posições essa chave foi
+//encontrada. Mostre também quantas vezes a chave foi sorteada.
+
+algoritmo "Chave"
+
+var
+
+n: vetor[1..30] de Inteiro
+i, chave, soma: Inteiro
+
+inicio
+
+para i <- 1 ate 30 faca
+   n[i] <- randi(15)
+fimpara
+
+escreva("Informe o valor da chave desejada: ")
+leia(chave)
+
+para i <- 1 ate 30 faca
+   se (chave = n[i]) entao
+      soma <- soma + 1
+      escreval("A chave de valor " , chave , " foi encontrada na posição " , i , ".")
+   fimse
+fimpara
+
+escreval("Foram encontradas " , soma , " chaves com esse valor.")
+
+fimalgoritmo
