@@ -1,0 +1,25 @@
+//Faça um programa que leia 7 nomes de pessoas e guarde-os em um vetor. No
+//final, mostre uma listagem com todos os nomes informados.
+
+algoritmo "Vetor Nome"
+
+var
+
+nome: caractere
+v: vetor[1..7] de caractere
+c: inteiro
+
+inicio
+
+para c <- 1 ate 7 faca
+     escreva("Digite o nome: ")
+     leia(nome)
+     v[c] <- nome
+fimpara
+
+escreval("LISTAGEM FINAL")
+para c <- 1 ate 7 faca
+     escreval(v[c])
+fimpara
+
+fimalgoritmo
