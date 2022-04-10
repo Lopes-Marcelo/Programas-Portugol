@@ -1,0 +1,27 @@
+//Desenvolva um programa que leia 10 números inteiros e guarde-os em um vetor.
+//No final, mostre quais são os números pares que foram digitados e em que
+//posições eles estão armazenados.
+
+algoritmo "Vetor Par"
+
+var
+
+n: vetor[1..10] de Inteiro
+i: Inteiro
+
+inicio
+
+Para i <- 1 ate 10 faca
+   Escreva("Digite o ", i, "o. valor: ")
+   Leia(n[i])
+FimPara
+
+LimpaTela
+
+Para i <- 1 ate 10 faca
+   Se (n[i] % 2 = 0) entao
+      EscrevaL("Valor ", n[i], " na posicao ", i, " é PAR!")
+   FimSe
+FimPara
+
+fimalgoritmo
