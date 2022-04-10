@@ -1,0 +1,31 @@
+//Escreva um programa que leia 15 números e guarde-os em um vetor. No final,
+//mostre o vetor inteiro na tela e em seguida mostre em que posições foram
+//digitados valores que são múltiplos de 10.
+
+algoritmo "Vetor 10"
+
+var
+
+n: vetor[1..15] de inteiro
+i: inteiro
+
+inicio
+
+para i <- 1 ate 15 faca
+   escreva("Digite o ", i, "o. valor: ")
+   leia(n[i])
+fimpara
+
+para i <- 1 ate 15 faca
+   escreva(n[i])
+fimpara
+
+escreval(" ")
+
+para i <- 1 ate 15 faca
+   se (n[i] % 10 = 0) entao
+      escreval("Valor ", n[i], " na posicao ", i, " é múltiplo de 10!")
+   fimse
+fimpara
+
+fimalgoritmo
