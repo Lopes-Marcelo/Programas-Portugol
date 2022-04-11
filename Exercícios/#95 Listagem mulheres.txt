@@ -1,0 +1,41 @@
+//Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
+//guarde esses dados em três vetores. No final, mostre uma listagem contendo
+//apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
+
+algoritmo "Listagem Mulheres"
+
+var
+
+nome: vetor [1..5] de caractere
+sexo: vetor [1..5] de caractere
+salario: vetor[1..5] de real
+i, tot: inteiro
+
+inicio
+
+para i <- 1 ate 5 faca
+   escreval("Funcionário " , i)
+   escreva("Nome: ")
+   leia(nome[i])
+   escreva("Informe o sexo [M/F]: ")
+   leia(sexo[i])
+   escreva("Informe o salário: R$")
+   leia(salario[i])
+   se (sexo[i] = "F") e (salario[i] > 5000) entao
+      tot <- tot + 1
+   fimse
+fimpara
+
+limpatela
+
+escreval("       LISTA      ")
+escreval("------------------")
+escreval(" ")
+escreval("Ao todo, " , tot , " mulheres ganham mais que R$ 5000,00 reais.")
+para i <- 1 ate 5 faca
+   se (sexo[i] = "F") e (salario[i] > 5000) entao
+      escreval(nome[i] , " com R$" , salario[i] , " de salário.")
+   fimse
+fimpara
+
+fimalgoritmo
