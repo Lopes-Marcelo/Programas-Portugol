@@ -1,0 +1,16 @@
+//Programa exemplo de comandos básicos.
+
+algoritmo "Conversor de Temperatura"
+
+var
+
+c , f: real
+
+inicio
+
+escreva("Informe a temperatura em Fº: ")
+leia(f)
+c <- (f - 32) / 2
+escreva("Em graus Celsius: " , c ,"C°")
+
+fimalgoritmo
