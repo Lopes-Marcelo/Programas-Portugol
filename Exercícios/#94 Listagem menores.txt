@@ -1,0 +1,37 @@
+//Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses
+//valores em dois vetores, em posições relacionadas. No final, mostre uma listagem
+//contendo apenas os dados das pessoas menores de idade.
+
+algoritmo "Listagem Menores"
+
+var
+
+nome: vetor [1..9] de caractere
+idade: vetor[1..9] de real
+i, tot: inteiro
+
+inicio
+
+para i <- 1 ate 9 faca
+   escreval("Indivíduo " , i)
+   escreva("Nome: ")
+   leia(nome[i])
+   escreva("Informe a idade: ")
+   leia(idade[i])
+   se (idade[i] < 18) entao
+      tot <- tot + 1
+   fimse
+fimpara
+
+limpatela
+escreval("LISTAGEM DE MENORES")
+escreval("------------------")
+escreval(" ")
+escreval("Ao todo, " , tot , " pessoas são menores de idade.")
+para i <- 1 ate 9 faca
+   se (idade [i] < 18) entao
+      escreval(nome[i] , " com " , idade[i] , " anos.")
+   fimse
+fimpara
+
+fimalgoritmo
