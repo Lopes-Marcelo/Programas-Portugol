@@ -1,0 +1,24 @@
+//Programa exemplo de comados básicos.
+
+algoritmo "Idade"
+
+var
+
+ano_nascimento , ano_atual , ano_futuro , idade , idade_futuro : inteiro
+
+inicio
+
+escreva ("Qual é ano do seu nascimento? ")
+leia(ano_nascimento)
+escreva ("Em que ano estamos? ")
+leia(ano_atual)
+escreva ("Descubra qual será sua idade. Digite o ano: ")
+leia(ano_futuro)
+
+idade <- ano_atual - ano_nascimento
+idade_futuro <- (ano_atual - ano_nascimento) + (ano_futuro - ano_atual)
+
+escreva ("A sua idade é: " , idade , ".")
+escreva ("A sua idade no escolhido será: " , idade_futuro , ".")
+
+fimalgoritmo
