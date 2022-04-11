@@ -1,4 +1,4 @@
-//Programa exemplo de estrutura condicional.
+//Programa exemplo de comados básicos.
 
 algoritmo "Idade"
 
