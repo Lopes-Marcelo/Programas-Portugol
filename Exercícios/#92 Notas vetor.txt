@@ -1,0 +1,47 @@
+//Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as em
+//a) Qual é a média da turma
+//b) Quantos alunos estão acima da média da turma
+//c) Qual foi a maior nota digitada
+//d) Em que posições a maior nota aparece
+
+algoritmo "Turma vetor"
+
+var
+
+nome: vetor [1..10] de caractere
+n1: vetor[1..10] de real
+i, acima_media: inteiro
+soma, media_t, maior: real
+
+inicio
+
+para i <- 1 ate 10 faca
+     escreval("Aluno " , i)
+     escreva("Nome: ")
+     leia(nome[i])
+     escreva("Nota: ")
+     leia(n1[i])
+     soma <- soma + n1[i]
+     se (n1[i] > maior) entao
+        maior <- n1[i]
+     fimse
+fimpara
+limpatela
+
+escreval("LISTAGEM DE ALUNOS")
+escreval("------------------")
+
+media_t <- soma/10
+para i <- 1 ate 10 faca
+     escreval(nome[i]:15, n1[i])
+     se (n1[i]>media_t) entao
+        acima_media <- acima_media + 1
+     fimse
+fimpara
+
+escreval(" ")
+escreval("A média da turma é: " , media_t :4:1)
+escreval("Ao todo " , acima_media , " alunos estiveram acima da média da turma que é " , media_t :4:1)
+escreval("A maior nota registrada foi de " , maior , " na posição " , i  )
+
+fimalgoritmo
