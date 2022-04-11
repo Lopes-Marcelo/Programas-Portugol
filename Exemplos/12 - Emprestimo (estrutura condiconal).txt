@@ -1,0 +1,18 @@
+//Programa exemplo de comados básicos.
+
+algoritmo "Empréstimo"
+
+var
+
+emprestimo, parcelas, juros : real
+
+inicio
+
+escreva ("Qual o valor do emprestimo? R$")
+leia(emprestimo)
+escreva ("Quer parcelar em quantas vezes? ")
+leia(parcelas)
+juros <- (emprestimo * 1.2) / parcelas
+escreva ("Pagará ", parcelas , " de R$", juros , ".")
+
+fimalgoritmo
