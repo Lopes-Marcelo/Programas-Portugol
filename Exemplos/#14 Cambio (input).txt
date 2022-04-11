@@ -1,0 +1,18 @@
+//Programa exemplo de comandos básicos.
+
+algoritmo "Câmbio"
+
+var
+
+reais , dolares : real
+
+inicio
+
+escreva ("Informe o valor em reais: R$")
+leia(reais)
+
+dolares <- reais/4.7
+
+escreva ("Essa quantia representa aproximadamente " , dolares :5:2 , " dólares no câmbio atual.")
+
+fimalgoritmo
