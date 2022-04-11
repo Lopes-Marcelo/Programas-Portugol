@@ -1,0 +1,16 @@
+//Programa exemplo de comandos básicos.
+
+algoritmo "Taxação"
+
+var
+
+preco , imposto : real
+
+inicio
+
+escreva("Informe o valor do produto: R$")
+leia(preco)
+imposto <- (preco * 20)/100
+escreva("O valor do imposto nesse produto é de: R$" , imposto :5:2)
+
+fimalgoritmo
