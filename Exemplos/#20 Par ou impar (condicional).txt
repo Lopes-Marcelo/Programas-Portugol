@@ -1,0 +1,20 @@
+//Programa exemplo de estrutura condicional.
+
+algoritmo "Par ou Ímpar"
+
+var
+
+n : inteiro
+
+inicio
+
+escreva("Digite um número: ")
+leia(n)
+
+se (n % 2 = 0) entao
+   escreva("O número ", n , " é par.")
+senao
+   escreva("O número ", n, " é ímpar.")
+fimse
+
+fimalgoritmo
