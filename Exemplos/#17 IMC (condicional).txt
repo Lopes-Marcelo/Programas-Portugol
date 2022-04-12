@@ -1,4 +1,4 @@
-//Programa exemplo de estrutura condiconal.
+//Programa exemplo de estrutura condicional.
 
 algoritmo "IMC"
 
