@@ -1,0 +1,24 @@
+//Programa exemplo de estrutura condiconal.
+
+algoritmo "Idade"
+
+var
+
+ano, nasc, idade : inteiro
+
+inicio
+
+escreva("Informe o ano atual: ")
+leia(ano)
+escreva("Informe o ano do seu nascimento: ")
+leia(nasc)
+idade <- ano - nasc
+escreva("Você tem " , idade, " anos.")
+
+se (idade >= 18) entao
+   escreva("E já atingiu a maioridade.")
+senao
+   escreva ("E ainda não pode beber.")
+fimse
+
+fimalgoritmo
