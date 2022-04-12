@@ -1,0 +1,24 @@
+//Programa exemplo para estrutura condicional.
+
+algoritmo "Disney 2"
+
+var
+
+dinheiro : inteiro
+
+inicio
+
+escreva("Quanto dinheiro você possui? R$")
+leia(dinheiro)
+
+se(dinheiro >= 10000) entao
+   escreva ("Partiu Disney!")
+senao
+   se (dinheiro >= 5000) e (dinheiro < 10000) entao
+      escreva("Partiu visitar familia.")
+   senao
+      escreva("#chateado")
+   fimse
+fimse
+
+fimalgoritmo
