@@ -1,0 +1,37 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Melhor Aluno"
+
+var
+
+nome: caractere
+c, nota, n, maior: real
+
+inicio
+
+escreval("----------------------")
+escreval(" Escola Santa Nathaly ")
+escreval("----------------------")
+
+c <- 1
+escreva("Quantos alunos a turma possui? ")
+leia(n)
+escreval( "-------------------")
+
+enquanto (c <= n) faca
+
+         escreval(" ALUNO ", c)
+         escreva("Nome do aluno: ")
+         leia(nome)
+         escreva("Nota de ", nome, ": ")
+         leia(nota)
+         se (nota > maior) entao
+            maior <- nota
+         fimse
+         escreval("-----------------")
+         c <- c + 1
+fimenquanto
+
+escreva("O melhor aluno é " , nome , " com nota ", maior , "." )
+
+fimalgoritmo
