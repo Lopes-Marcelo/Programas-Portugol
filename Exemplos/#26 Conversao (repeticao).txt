@@ -1,0 +1,22 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Conversão"
+
+var
+
+r, d, c, n: real
+
+inicio
+
+c <- 1
+escreva("Quantas conversões você gostaria de realizar? ")
+leia(n)
+enquanto (c <= n) faca
+   escreva("Informe o valor em R$: ")
+   leia(r)
+   d <- r / 2.20
+   escreval("O valor convertido em dólar é U$" , d:5:2)
+   c <- c + 1
+fimenquanto
+
+fimalgoritmo
