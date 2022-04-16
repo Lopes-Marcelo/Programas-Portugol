@@ -1,0 +1,27 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Contador Infinito"
+
+var
+
+n, s: inteiro
+resp: caractere
+
+inicio
+
+s <- 0
+resp <- "s"
+
+enquanto (resp = "s") faca
+         escreva("Digite o valor: ")
+         leia(n)
+         
+         s <- s + n
+         
+         escreva("Você quer continuar [s/n]? ")
+         leia(resp)
+fimenquanto
+
+escreval("A soma de todos os números apresentados é " , s)
+
+fimalgoritmo
