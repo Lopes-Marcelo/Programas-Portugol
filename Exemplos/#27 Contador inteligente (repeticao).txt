@@ -1,0 +1,42 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Contador Inteligente"
+
+var
+
+in, fim, cont: inteiro
+
+inicio
+
+escreval(" CONTAGEM INTELIGENTE ")
+escreval("======================")
+escreva("")
+
+escreva("Início: ")
+leia(in)
+escreva("Fim: ")
+leia(fim)
+
+
+escreval("---------------------")
+escreval("      CONTANDO       ")
+escreval("---------------------")
+escreva("")
+
+se (fim > in) entao
+   cont <- in - 1
+   enquanto (cont < fim) faca
+            cont <- cont + 1
+            escreva(cont)
+   fimenquanto
+fimse
+
+se (in > fim) entao
+   cont <- in + 1
+   enquanto (cont > fim) faca
+            cont <- cont - 1
+            escreva(cont)
+   fimenquanto
+fimse
+
+fimalgoritmo
