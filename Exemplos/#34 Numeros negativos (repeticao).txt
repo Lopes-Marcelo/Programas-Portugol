@@ -1,0 +1,26 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Números Negativos"
+
+var
+
+n, c, cont, totn: inteiro
+
+inicio
+
+cont <- 1
+totn <- 0
+
+repita
+   escreva("Digite um número: ")
+   leia(n)
+   se (n<0) entao
+      totn <- totn + 1
+   fimse
+
+   c <- c + 1
+ate(c > 4)
+
+escreva("Foram digitados " , totn , " números negativos.")
+
+fimalgoritmo
