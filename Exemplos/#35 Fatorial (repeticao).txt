@@ -1,0 +1,30 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Fatorial"
+
+var
+
+n, cont, f: inteiro
+r: caractere
+
+inicio
+
+repita
+   escreva("Digite um número: ")
+   leia(n)
+   cont <- n
+   f <- 1
+
+   repita
+      f <- f * cont
+      cont <- cont - 1
+   ate (cont < 1)
+
+   escreval("O valor do fatorial de " , n , " é igual a " , f )
+   escreva("Quer continuar? [s/n] ")
+   leia(r)
+   limpatela
+
+ate (r = "n")
+
+fimalgoritmo
