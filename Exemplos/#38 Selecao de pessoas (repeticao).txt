@@ -1,0 +1,53 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Seleção de Pessoas"
+
+var
+
+sexo, r, n, m, f: caractere
+idade, cor, nhom, nmul: inteiro
+
+inicio
+
+nhom <- 0
+nmul <- 0
+
+repita
+
+   escreval("========================")
+   escreval("   SELETOR DE PESSOAS   ")
+   escreval("========================")
+
+   escreva("Qual o sexo? [m/f] ")
+   leia(sexo)
+   escreva("Qual a idade? ")
+   leia(idade)
+   escreval("Qual a cor do cabelo? ")
+   escreval("------------------------")
+   escreval(" [1] Preto ")
+   escreval(" [2] Castanho")
+   escreval(" [3] Loiro")
+   escreval(" [4] Ruivo")
+   escreval("------------------------")
+   leia(cor)
+
+   escreva("Deseja continuar? [s/n] ")
+   leia(r)
+
+
+   se (sexo = m) e (idade >= 18) e (cor = 2) entao
+      nhom <- nhom + 1
+   fimse
+
+   se (sexo = f) e (idade >= 25) e (idade <= 30) e (cor = 3) entao
+      nmul <- nmul + 1
+   fimse
+
+ate (r = "n")
+
+escreval("O número de homens com mais de 18 anos e cabelo castanho é de " , nhom)
+escreval("O número de mulheres entre 25 e 30 anos e loiras é de " , nmul)
+
+escreva("Saindo..")
+
+fimalgoritmo
