@@ -1,0 +1,23 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Analista"
+
+var
+
+c, v, n: inteiro
+
+inicio
+
+para c <- 1 ate 6 faca
+   escreva("Digite um valor: ")
+   leia(v)
+
+   se (v >= 0) e (v <= 10) entao
+      n <- n + 1
+   fimse
+
+fimpara
+
+escreva("Dos valores digitados " , n , " estão entre 0 e 10.")
+
+fimalgoritmo
