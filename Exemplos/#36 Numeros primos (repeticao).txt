@@ -1,0 +1,33 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Números Primos"
+
+var
+
+cont, n, contdiv : inteiro
+
+inicio
+
+cont <- 1
+contdiv <- 0
+
+escreva("Digite um número: ")
+leia(n)
+
+repita
+   escreval(cont)
+   se (n % cont = 0) entao
+      contdiv <- contdiv + 1
+   fimse
+
+   cont <- cont + 1
+
+ate (cont > n)
+
+se (contdiv > 2) entao
+   escreva("Ao todo existem " , contdiv , " valores divisiveis por " , n , " , portanto esse número não é primo.")
+senao
+   escreva("Ao todo existem " , contdiv , " valores divisiveis por " , n , " , portanto ele é primo.")
+fimse
+
+fimalgoritmo
