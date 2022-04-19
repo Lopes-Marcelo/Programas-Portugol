@@ -1,0 +1,29 @@
+//Program exemplo de estrutura de repetição.
+
+algoritmo "Soma"
+
+var
+
+c, v, n, im: inteiro
+
+inicio
+
+para c <- 1 ate 6 faca
+   escreva("Digite um valor: ")
+   leia(v)
+   
+   se (v >= 0) e (v <= 10) entao
+      n <- n + 1
+
+        se (v % 2 = 1) entao
+           im <- im + v
+        fimse
+        
+   fimse
+
+fimpara
+
+escreval("Dos valores digitados " , n , " estão entre 0 e 10.")
+escreva("A soma dos números ímpares dentro do intervalo digitados é " , im)
+
+fimalgoritmo
