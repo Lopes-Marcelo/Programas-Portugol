@@ -1,0 +1,42 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Analisador"
+
+var
+
+c, v, s, divi, nu, som: inteiro
+m: real
+
+inicio
+
+s <- 0
+som <- 0
+
+para c <- 1 ate 5 faca
+   escreva("Digite um valor: ")
+   leia(v)
+
+   s <- s + v
+   m <- s / 5
+
+   se (v % 5 = 0) e (v <> 0) entao
+      divi <- divi + 1
+   fimse
+
+   se (v = 0) entao
+      nu <- nu + 1
+   fimse
+
+   se (v % 2 = 0) entao
+      som <- som + v
+   fimse
+
+fimpara
+
+escreval("A soma dos valores digitados é " , s )
+escreval("A média dos valores apresentados é " , m)
+escreval(divi , " números são divísiveis por 5.")
+escreval(nu , " números são nulos.")
+escreval("A soma dos números pares digitados é " , som)
+
+fimalgoritmo
