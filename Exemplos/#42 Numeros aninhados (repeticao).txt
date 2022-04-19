@@ -1,0 +1,17 @@
+//Programa exemplo de estrutura de repetição.
+
+algoritmo "Números Aninhados"
+
+var
+
+n1 , n2 : inteiro
+
+inicio
+
+para n1 <- 1 ate 3 faca
+   para n2 <- 1 ate 3 faca
+      escreval(n1 , n2)
+   fimpara
+fimpara
+
+fimalgoritmo
