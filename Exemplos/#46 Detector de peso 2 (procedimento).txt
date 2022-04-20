@@ -1,0 +1,40 @@
+//Programa exemplo de uso de procedimento.
+
+algoritmo "Detector de Peso 2"
+
+var
+
+i : inteiro
+n, pesado: caractere
+p, mai: real
+
+procedimento topo()
+
+inicio
+
+limpatela
+escreval("------------------------")
+escreval("   DETECTOR DE PESADOS  ")
+escreval("------------------------")
+
+fimprocedimento
+
+inicio
+
+para i <- 1 ate 5 faca
+   topo()
+   escreva("Digite o nome: ")
+   leia(n)
+   escreva("Digite o peso de " , n , ": ")
+   leia(p)
+   se (p > mai) entao
+      mai <- p
+      pesado <- n
+   fimse
+   limpatela
+fimpara
+
+topo()
+escreval("A pessoa mais pesada foi " , pesado, ", com " , mai , " Kg.")
+
+fimalgoritmo
