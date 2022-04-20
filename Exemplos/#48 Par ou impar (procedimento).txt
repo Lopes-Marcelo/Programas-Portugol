@@ -1,0 +1,27 @@
+//Progroma exemplo de uso de procedimento.
+
+algoritmo "Par ou Ímpar"
+
+var
+
+n: inteiro
+
+procedimento parouimpar(v: inteiro)
+
+inicio
+
+se (v % 2 = 0) entao
+   escreval("O número " , v ," é PAR!")
+senao
+     escreval("O número " , v , " é ÍMPAR!")
+fimse
+
+fimprocedimento
+
+inicio
+
+escreva("Digite um número: ")
+leia(n)
+parouimpar(n)
+
+fimalgoritmo
