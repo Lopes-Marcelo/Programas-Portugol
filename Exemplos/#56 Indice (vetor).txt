@@ -1,0 +1,21 @@
+//Programa exemplo de uso de vetor.
+
+algoritmo "Índice"
+
+var
+
+i: inteiro
+v: vetor[1..5] de inteiro
+
+inicio
+
+para i <- 1 ate 5 faca
+     escreva("Digite o " , i , "o. valor: ")
+     leia(v[i])
+fimpara
+
+para i <- 1 ate 5 faca
+     escreva("[" , v[i] , "]")
+fimpara
+
+fimalgoritmo
