@@ -138,6 +138,6 @@ repita
    limpatela
    MostraVelha()
 ate (terminouVelha() = verdadeiro)
-escreval("JOGO FINALIZADO!!!")
+escreval("JOGO FINALIZADO!")
 
 fimalgoritmo
